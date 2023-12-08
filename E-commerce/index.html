@@ -64,13 +64,69 @@
                         <a class="nav-link text-uppercase text-dark" href="#Contacts">Contactos</a>
                     </li>
                     <li class="nav-item px-2 py-2 border-0">
-                        <a class="nav-link text-uppercase text-dark" href="indexRegistro.html">Registrate</a>
+                        <a class="nav-link text-uppercase text-dark" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registrate</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--finaliza el navbar-->
+
+    <!-- Inicio del formulario con modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="registerModalLabel">Registrate</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <!-- formulario -->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" aria-label="Nombres">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" aria-label="Apellidos">
+                        </div>
+                    </div>
+                    <div class="mb-3" style="text-align: left;">
+                        <label for="formGroupExampleInput" class="form-label">Movil</label>
+                        <input type="number" class="form-control" aria-label="Movil">
+                    </div>
+                    <div class="mb-3" style="text-align: left;">
+                        <label for="formGroupExampleInput" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3" style="text-align: left;">
+                        <label for="formGroupExampleInput"
+                            class="form-label">Contraseña</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock">
+                    </div>
+                    <div class="mb-3" style="text-align: left;">
+                        <label for="formGroupExampleInput" class="form-label">Verifica Contraseña</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                          aria-describedby="passwordHelpBlock">
+                    </div>                    
+                </div>               
+                <!-- Fin del formulario-->
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Registrarse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Finaliza formulario con modal -->
 
     <!--header-->
     <header id="header" class="vh-100 carousel slide mb-5" data-bs-ride="carousel" style="padding-top: 104px;">
