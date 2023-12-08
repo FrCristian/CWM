@@ -161,6 +161,11 @@ footer{
     border: none; 
 }
 
+.social-icon {
+    font-size: 24px; /* Ajusta el tamaño del icono */
+    margin-right: 10px; /* Añade una pequeña separación a la derecha de cada icono */
+}
+
 /* media queries */
 
 @media(min-width: 992px){
