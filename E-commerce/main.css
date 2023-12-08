@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b
+}
+
+body{
+    font-family: var(--sm-font);
+}
+
+/* button*/
+
+.bg-primary{
+    background-color: var(--pink) !important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85 ,85 ,85);
+    padding: 10ox 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85 ,85 ,85);
+}
+
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* color de texto*/
+
+.text-primary{
+    color: var(--pink) !important;
+}
+
+
+/* navbar */
+
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img{
+    width: 30px;
+}
+
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover{
+    color: #722F37 !important;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+
+/* header*/
+
+#header{
+    background: url(/img/banner_navidad.jpeg) top/cover no-repeat;
+}
+
+/* header Oferta*/
+#headerOferta{
+    background: url(/img/modelo_oferta1.jpg) top/cover no-repeat;
+}
+
+
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn{
+    border-color: #fff !important;
+}
+
+.carousel-item .btn:hover{
+    border-color: var(--pink) !important;
+}
+
+/* title  */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* coleccion */
+
+.active-filter-btn{
+    background-color: var(--pink) !important;
+    color: #fff !important;
+    border-color: var(--pink) !important;
+}
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #209ad3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+/* Elimina el borde */
+.carousel-control-prev, .carousel-control-next {
+    border: none; 
+}
+
+/* media queries */
+
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}

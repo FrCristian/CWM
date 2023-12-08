@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Big</title>
+    <!----bootstrap css---->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <!--fontawensone cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between alig-items-center order-lg-0" href="index.html">
+                <img src="img/shopping-bag-icon.png" alt="site icon">
+                <span class="text-uppercase font-lighter ms-2">Sales Big</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-o start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-o start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="indexOfertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#ChristmasSeason">Temporada Navideña </a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#About">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="#Contacts">Contactos</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="indexRegistro.html">Registrate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--finaliza el navbar-->
+
+    <!--Inicio Registro-->
+
+    <div class="container text-center"
+        style="display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column;"
+        style="padding-top: 72px;">
+        <div class="row">
+            <div class="col-sm-3 col-md-7 mb-5">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Perfil</button>
+                        <hr class="border">
+
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <br>
+                        <div class="row g-3">
+                            <div class="col-6" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label"><strong>Nombre</strong></label>
+                                <input type="text" class="form-control" placeholder="Nombres" aria-label="Nombres">
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label"><strong>Apellidos</strong></label>
+                                <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label"><strong>Telefono</strong></label>
+                                <input type="number" class="form-control" placeholder="Telefono" aria-label="Telefono">
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label"><strong>Movil</strong></label>
+                                <input type="number" class="form-control" placeholder="Movil" aria-label="Movil">
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label"><strong>Email</strong></label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label"><strong>Ciudad</strong></label>
+                                <input type="text" class="form-control" placeholder="Ciudad" aria-label="Ciudad">
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <label for="formGroupExampleInput"
+                                    class="form-label"><strong>Contraseña</strong></label>
+                                <input type="password" id="inputPassword5" class="form-control" placeholder="Contraseña"
+                                    aria-describedby="passwordHelpBlock">
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label"><strong>Verifica
+                                        Contraseña</strong></label>
+                                <input type="password" id="inputPassword5" class="form-control"
+                                    placeholder="Verifica Contraseña" aria-describedby="passwordHelpBlock">
+                            </div>
+                            <div class="col-8" style="text-align: left;">
+                                <button type="button" class="btn" style="background-color: #d5dad4; color: #fff;"><img
+                                        src="img/check-circle.svg" alt=""
+                                        style="margin-right: 5px;">Registrarse</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+    <!--Fin de Registro-->
+
+    <!--footer-->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>celular</h4>
+                <p>990039456</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>contactos@salesbig.com</p>
+            </div>
+            <div class="content-foo href=#Direccion">
+                <a class="link-offset-2 link-underline link-underline-opacity-0" href="#Direccion"><h4>Dirección</h4></a>
+                <p>Av. Asuncion 999</p>
+            </div>
+
+        </div>
+        <h2 class="titulo-final">&copy; Sales Big | CWM</h2>
+    </footer>
+</body>
+
+<!--fin footer-->
+
+</body>
+
+</html>
