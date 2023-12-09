@@ -41,7 +41,7 @@
                     <input type="text" id="search-bar" style="display: none;">
                 </button>
             </div>
-            
+
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,74 +58,82 @@
                         <a class="nav-link text-uppercase text-dark" href="#ChristmasSeason">Temporada Navideña </a>
                     </li>
                     <li class="nav-item px-2 py-2">
-                        <a class="nav-link text-uppercase text-dark" href="#About">Acerca de Nosotros</a>
+                        <a class="nav-link text-uppercase text-dark" id="aboutBtn" href="#">Acerca de Nosotros</a>
                     </li>
                     <li class="nav-item px-2 py-2 border-0">
                         <a class="nav-link text-uppercase text-dark" href="#Contacts">Contactos</a>
                     </li>
                     <li class="nav-item px-2 py-2 border-0">
-                        <a class="nav-link text-uppercase text-dark" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registrate</a>
+                        <a class="nav-link text-uppercase text-dark" href="#" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">Registrate</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--finaliza el navbar-->
+    <!-- Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Aquí puedes poner tu imagen -->
+            <img src="img/quienes_somos.jpeg" alt="Quienes somos">
+        </div>
+    </div>
 
     <!-- Inicio del formulario con modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="registerModalLabel">Registrate</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <!-- formulario -->
-                <div class="row">
-                    <div class="col-6">
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Nombres</label>
-                            <input type="text" class="form-control" aria-label="Nombres">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="registerModalLabel">Registrate</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- formulario -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Nombres</label>
+                                    <input type="text" class="form-control" aria-label="Nombres">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control" aria-label="Apellidos">
+                                </div>
+                            </div>
+                            <div class="mb-3" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label">Movil</label>
+                                <input type="number" class="form-control" aria-label="Movil">
+                            </div>
+                            <div class="mb-3" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label">Contraseña</label>
+                                <input type="password" id="inputPassword5" class="form-control"
+                                    aria-describedby="passwordHelpBlock">
+                            </div>
+                            <div class="mb-3" style="text-align: left;">
+                                <label for="formGroupExampleInput" class="form-label">Verifica Contraseña</label>
+                                <input type="password" id="inputPassword5" class="form-control"
+                                    aria-describedby="passwordHelpBlock">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Apellidos</label>
-                            <input type="text" class="form-control" aria-label="Apellidos">
-                        </div>
-                    </div>
-                    <div class="mb-3" style="text-align: left;">
-                        <label for="formGroupExampleInput" class="form-label">Movil</label>
-                        <input type="number" class="form-control" aria-label="Movil">
-                    </div>
-                    <div class="mb-3" style="text-align: left;">
-                        <label for="formGroupExampleInput" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3" style="text-align: left;">
-                        <label for="formGroupExampleInput"
-                            class="form-label">Contraseña</label>
-                        <input type="password" id="inputPassword5" class="form-control"
-                            aria-describedby="passwordHelpBlock">
-                    </div>
-                    <div class="mb-3" style="text-align: left;">
-                        <label for="formGroupExampleInput" class="form-label">Verifica Contraseña</label>
-                        <input type="password" id="inputPassword5" class="form-control"
-                          aria-describedby="passwordHelpBlock">
-                    </div>                    
-                </div>               
-                <!-- Fin del formulario-->
-              </form>
+                        <!-- Fin del formulario-->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Registrarse</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Registrarse</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
     <!-- Finaliza formulario con modal -->
 
     <!--header-->
@@ -166,7 +174,8 @@
             <img src="img/modelos niños navidad.jpg" class="rounded mx-auto d-block" alt="Niños navidad">
             <div class="position-absolute bottom-0 start-50 translate-middle">
                 <h2 class="text-capitalize text-white text-center">¡Temporada Navideña! Desde S/22.95</h2>
-                <h5 class="text-capitalize text-white text-center">Descubre estilos únicos para los más pequeños y haz que conozcan la magia de estas fiestas.</h5>
+                <h5 class="text-capitalize text-white text-center">Descubre estilos únicos para los más pequeños y haz
+                    que conozcan la magia de estas fiestas.</h5>
                 <div class="d-flex justify-content-center align-items-center ">
                     <a href="indexOfertas.html" class="btn mt-3 text-uppercase text-center">Ir a colleción</a>
                 </div>
@@ -174,8 +183,8 @@
         </div>
     </section>
     <!--final_temporadaNavideña-->
-     <!--collection-->
-     <section id="collection" class="py-5">
+    <!--collection-->
+    <section id="collection" class="py-5">
         <div class="container">
             <div class="title text-center">
                 <h2 class="position-relative d-inline-block">Liquidación</h2>
@@ -351,15 +360,20 @@
                 <p>contactos@salesbig.com</p>
             </div>
             <div class="content-foo href=#Direccion">
-                <a class="link-offset-2 link-underline link-underline-opacity-0" href="#Direccion"><h4>Dirección</h4></a>
+                <a class="link-offset-2 link-underline link-underline-opacity-0" href="#Direccion">
+                    <h4>Dirección</h4>
+                </a>
                 <p>Av. Asuncion 999</p>
             </div>
             <!-- Aquí están los iconos de las redes sociales -->
             <div class="content-foo">
                 <h4>Síguenos</h4>
-                <a href="https://www.facebook.com/yourFacebookPage" target="_blank"><i class="fab fa-facebook-f social-icon"></i></a>
-                <a href="https://www.instagram.com/yourInstagramProfile" target="_blank"><i class="fab fa-instagram social-icon"></i></a>
-                <a href="https://www.tiktok.com/@yourTikTokProfile" target="_blank"><i class="fab fa-tiktok social-icon"></i></a>
+                <a href="https://www.facebook.com/yourFacebookPage" target="_blank"><i
+                        class="fab fa-facebook-f social-icon"></i></a>
+                <a href="https://www.instagram.com/yourInstagramProfile" target="_blank"><i
+                        class="fab fa-instagram social-icon"></i></a>
+                <a href="https://www.tiktok.com/@yourTikTokProfile" target="_blank"><i
+                        class="fab fa-tiktok social-icon"></i></a>
             </div>
         </div>
         <h2 class="titulo-final">&copy; Sales Big | CWM</h2>
