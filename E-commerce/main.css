@@ -167,7 +167,7 @@ footer{
 }
 
 /* Estilo del modal */
-.modal {
+.modal-nosotros {
     display: none; /* El modal está oculto por defecto */
     position: fixed; /* Posición fija */
     z-index: 1; /* Situado encima de todo */
@@ -180,7 +180,7 @@ footer{
   }
   
   /* Contenido del modal */
-  .modal-content {
+  .modal-nosotros-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% desde la parte superior y centrado */
     padding: 20px;
